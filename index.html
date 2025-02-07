@@ -4,108 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>Flowers</title>
     <style>
-        /* CSS Style */
         body {
-            background-color: #000000; /* Latar belakang hitam */
-            font-family: 'Arial', sans-serif; /* Gaya font umum */
-            text-align: center; /* Pusatkan elemen */
+            background-color: #000; /* Latar belakang hitam */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #fff; /* Warna teks putih */
             margin: 0;
             padding: 0;
-            color: #ffffff; /* Warna teks default */
         }
 
         .greetings .title span {
             display: inline-block;
-            font-size: 4rem; /* Ukuran lebih besar */
+            font-size: 4rem;
             color: rgba(255, 255, 255, 0.2); /* Warna redup default */
-            margin: 0 5px; /* Jarak antar huruf */
-            animation: blink 1.5s infinite; /* Animasi berkedip */
+            margin: 0 5px;
+            animation: glow 1.5s infinite;
         }
 
         .greetings .name span {
             display: inline-block;
-            font-size: 4rem; /* Ukuran huruf besar untuk ASSYFA */
-            font-weight: bold; /* Tebal */
-            color: #ffffff; /* Putih solid */
-            margin: 0 5px; /* Jarak antar huruf */
+            font-size: 4rem;
+            color: #fff;
+            font-weight: bold;
+            margin: 0 5px;
         }
 
         .description span {
-            display: block;
             font-size: 1.2rem;
-            color: #ffffff; /* Putih solid */
             margin-top: 20px;
+            display: block;
         }
 
         .button button {
-            background-color: #ff69b4; /* Warna tombol */
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            background-color: #ff69b4;
+            color: #fff;
             font-size: 1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
             margin-top: 20px;
             transition: background-color 0.3s ease;
         }
 
         .button button:hover {
-            background-color: #ff85c2; /* Warna tombol saat hover */
+            background-color: #ff85c2;
         }
 
         .button a {
             text-decoration: none;
-            color: white; /* Warna teks tombol */
+            color: inherit;
         }
 
-        /* Animasi untuk HALLO */
-        @keyframes blink {
+        @keyframes glow {
             0%, 100% {
-                color: rgba(255, 255, 255, 0.2); /* Redup */
+                color: rgba(255, 255, 255, 0.2); /* Warna redup */
                 text-shadow: none;
             }
             50% {
-                color: #ffffff; /* Putih terang */
-                text-shadow: 0 0 10px #ffffff, 0 0 20px #00ffff; /* Efek bercahaya */
+                color: #fff; /* Putih terang */
+                text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Efek glow biru */
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Bagian Salam -->
-        <div class="greetings">
-            <div class="title">
-                <span>H</span>
-                <span>A</span>
-                <span>L</span>
-                <span>L</span>
-                <span>O</span>
-            </div>
-            <div class="name">
-                <span>A</span>
-                <span>S</span>
-                <span>S</span>
-                <span>Y</span>
-                <span>F</span>
-                <span>A</span>
-            </div>
+    <div class="greetings">
+        <div class="title">
+            <span>H</span>
+            <span>A</span>
+            <span>L</span>
+            <span>L</span>
+            <span>O</span>
         </div>
-
-        <!-- Bagian Deskripsi -->
-        <div class="description">
-            <span>Aku punya hadiah spesial buat kamu nih, tolong dibuka ya...</span>
+        <div class="name">
+            <span>A</span>
+            <span>S</span>
+            <span>S</span>
+            <span>Y</span>
+            <span>F</span>
+            <span>A</span>
         </div>
-
-        <!-- Bagian Tombol -->
-        <div class="button">
-            <button>
-                <a href="flower.html">&lt;3 Klik di sini &lt;3</a>
-            </button>
-        </div>
+    </div>
+    <div class="description">
+        <span>Aku punya hadiah spesial buat kamu nih, tolong dibuka ya...</span>
+    </div>
+    <div class="button">
+        <button>
+            <a href="flower.html">&lt;3 Klik di sini &lt;3</a>
+        </button>
     </div>
 </body>
 </html>
+
 
