@@ -9,34 +9,34 @@
     <style>
         /* CSS Style */
         body {
-            background-color: #f4f4f9; /* Warna latar belakang */
-            font-family: 'Arial', sans-serif; /* Gaya font */
-            text-align: center; /* Pusatkan semua elemen */
+            background-color: #000000; /* Latar belakang hitam */
+            font-family: 'Arial', sans-serif; /* Gaya font umum */
+            text-align: center; /* Pusatkan elemen */
             margin: 0;
             padding: 0;
+            color: #ffffff; /* Warna teks default */
         }
 
-        .container {
-            padding: 50px;
+        .greetings .title span {
+            display: inline-block;
+            font-size: 4rem; /* Ukuran lebih besar */
+            color: rgba(255, 255, 255, 0.2); /* Warna redup default */
+            margin: 0 5px; /* Jarak antar huruf */
+            animation: blink 1.5s infinite; /* Animasi berkedip */
         }
 
-        .greetings .title span,
         .greetings .name span {
             display: inline-block;
-            font-size: 3rem;
-            color: #ff69b4; /* Warna huruf HALLO dan ASSYFA */
+            font-size: 4rem; /* Ukuran huruf besar untuk ASSYFA */
+            font-weight: bold; /* Tebal */
+            color: #ffffff; /* Putih solid */
             margin: 0 5px; /* Jarak antar huruf */
-            animation: bounce 1s infinite; /* Efek animasi */
-        }
-
-        .greetings .name {
-            margin-top: 20px; /* Jarak antara HALLO dan ASSYFA */
         }
 
         .description span {
             display: block;
             font-size: 1.2rem;
-            color: #333333;
+            color: #ffffff; /* Putih solid */
             margin-top: 20px;
         }
 
@@ -57,19 +57,18 @@
 
         .button a {
             text-decoration: none;
-            color: white; /* Warna teks di tombol */
+            color: white; /* Warna teks tombol */
         }
 
-        /* Animasi */
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
+        /* Animasi untuk HALLO */
+        @keyframes blink {
+            0%, 100% {
+                color: rgba(255, 255, 255, 0.2); /* Redup */
+                text-shadow: none;
             }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
+            50% {
+                color: #ffffff; /* Putih terang */
+                text-shadow: 0 0 10px #ffffff, 0 0 20px #00ffff; /* Efek bercahaya */
             }
         }
     </style>
