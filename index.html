@@ -27,17 +27,16 @@
             text-align: center;
         }
 
-        /* Teks HALLO dan ASSYFA */
+        /* Teks HALLO dan ASSYFA mengikuti format per huruf */
         .greetings {
             font-size: 4rem;
             font-weight: bold;
             text-align: center;
-            color: #ff69b4; /* Warna pink */
+            color: #ff69b4;
         }
 
-        .greetings .hallo,
-        .greetings .assyfa {
-            display: block;
+        .greetings span {
+            display: inline-block;
             letter-spacing: 5px;
         }
 
@@ -78,8 +77,17 @@
 <body>
     <div class="container">
         <div class="greetings">
-            <span class="hallo">HALLO</span>
-            <span class="assyfa">ASSYFA</span>
+            <span>H</span>
+            <span>A</span>
+            <span>L</span>
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>S</span>
+            <span>S</span>
+            <span>Y</span>
+            <span>F</span>
+            <span>A</span>
         </div>
         <div class="description">
             <span>Aku punya hadiah spesial buat kamu nih, tolong dibuka ya...</span>
@@ -92,3 +100,4 @@
     </div>
 </body>
 </html>
+
