@@ -27,13 +27,21 @@
             text-align: center;
         }
 
-        /* Animasi teks HALLOKAMU */
+        /* Animasi teks HALLO dan ASSYFA */
         .greetings {
             font-size: 4rem;
             font-weight: bold;
-            display: flex;
-            gap: 5px;
+            text-align: center;
             animation: glow 1.5s infinite alternate;
+        }
+
+        .greetings .hallo {
+            display: block;
+        }
+
+        .greetings .assyfa {
+            display: block;
+            margin-top: -10px; /* Sedikit merapatkan jarak */
         }
 
         /* Efek neon glow */
@@ -83,15 +91,8 @@
 <body>
     <div class="container">
         <div class="greetings">
-            <span>H</span>
-            <span>A</span>
-            <span>L</span>
-            <span>L</span>
-            <span>O</span>
-            <span>K</span>
-            <span>A</span>
-            <span>M</span>
-            <span>U</span>
+            <span class="hallo">HALLO</span>
+            <span class="assyfa">ASSYFA</span>
         </div>
         <div class="description">
             <span>Aku punya hadiah spesial buat kamu nih....</span>
@@ -104,7 +105,4 @@
     </div>
 </body>
 </html>
-
-
-
 
