@@ -7,28 +7,31 @@
     <title>Flowers</title>
     <style>
         body {
-            background-color: #000; /* Latar belakang hitam */
+            background-color: #000;
             font-family: Arial, sans-serif;
             text-align: center;
-            color: #fff; /* Warna teks putih */
+            color: #fff;
             margin: 0;
             padding: 0;
         }
 
-        .greetings .title span {
+        .greetings span {
             display: inline-block;
             font-size: 4rem;
-            color: rgba(255, 255, 255, 0.2); /* Warna redup default */
-            margin: 0 5px;
-            animation: glow 1.5s infinite;
-        }
-
-        .greetings .name span {
-            display: inline-block;
-            font-size: 4rem;
-            color: #fff;
             font-weight: bold;
             margin: 0 5px;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                color: rgba(255, 255, 255, 0.2);
+                text-shadow: none;
+            }
+            100% {
+                color: #fff;
+                text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+            }
         }
 
         .description span {
@@ -57,36 +60,21 @@
             text-decoration: none;
             color: inherit;
         }
-
-        @keyframes glow {
-            0%, 100% {
-                color: rgba(255, 255, 255, 0.2); /* Warna redup */
-                text-shadow: none;
-            }
-            50% {
-                color: #fff; /* Putih terang */
-                text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Efek glow biru */
-            }
-        }
     </style>
 </head>
 <body>
     <div class="greetings">
-        <div class="title">
-            <span>H</span>
-            <span>A</span>
-            <span>L</span>
-            <span>L</span>
-            <span>O</span>
-        </div>
-        <div class="name">
-            <span>A</span>
-            <span>S</span>
-            <span>S</span>
-            <span>Y</span>
-            <span>F</span>
-            <span>A</span>
-        </div>
+        <span>H</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>S</span>
+        <span>S</span>
+        <span>Y</span>
+        <span>F</span>
+        <span>A</span>
     </div>
     <div class="description">
         <span>Aku punya hadiah spesial buat kamu nih, tolong dibuka ya...</span>
@@ -98,5 +86,6 @@
     </div>
 </body>
 </html>
+
 
 
