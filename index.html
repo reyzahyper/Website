@@ -9,7 +9,7 @@
     <style>
         /* Pastikan body memenuhi layar dan kontennya ada di tengah */
         body {
-            background: linear-gradient(to bottom, #ffffff, #87CEFA); /* Gradasi dari putih ke biru muda */
+            background: linear-gradient(to bottom, #ffffff, #ff69b4); /* Gradasi putih ke pink */
             color: black;
             font-family: Arial, sans-serif;
             display: flex;
@@ -33,6 +33,7 @@
             font-weight: bold;
             text-align: center;
             color: #ff69b4; /* Warna pink */
+            text-shadow: 3px 3px 10px rgba(255, 105, 180, 0.7); /* Efek glow */
         }
 
         .greetings .hallo,
@@ -61,12 +62,13 @@
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease;
             font-weight: bold;
         }
 
         .button button:hover {
             background-color: #ff85c2;
+            transform: scale(1.05); /* Efek memperbesar sedikit saat hover */
         }
 
         .button a {
@@ -92,4 +94,3 @@
     </div>
 </body>
 </html>
-
